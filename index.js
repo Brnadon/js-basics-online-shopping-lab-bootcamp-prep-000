@@ -24,10 +24,10 @@ for (var item in cart){
       }
        console.log(`In your cart, you have ${itemOrder.join(', ')}.`)
   }
- 
+
  function removeFromCart(item){
   var inCart = false;
- 
+
   for (var i = 0; i < cart.length; i++) {
      if (cart[i].hasOwnProperty(item)) {
       inCart = true;
@@ -39,7 +39,7 @@ for (var item in cart){
     }
      return cart;
  }
- 
+
  function placeOrder(cardNumber){
    if (!cardNumber){
      console.log("We don't have a credit card on file for you to place your order.")
